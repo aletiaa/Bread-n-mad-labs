@@ -151,7 +151,7 @@
                 font-size: 50px;
                 line-height: 60px;
                 text-align: center;
-                margin-top: 100px;
+                margin-top: 200px;
                 margin-left: 350px;
                 margin-right: 350px;
                 letter-spacing: 0.05rem;
@@ -164,7 +164,6 @@
                 line-height: 30px;
                 text-align: center;
                 margin-top: 20px;
-                letter-spacing: 0.05rem;
             }
 
             .category {
@@ -172,12 +171,19 @@
                 position: relative;
                 display: inline-block;
                 float:left;
-                padding:30px;
+                margin: 30px 36.5px 0 0;
             }
 
             .images {
-                width: 360px;
-                height: 425px;
+                width: 394.5px;
+                height: 440px;
+                object-fit: cover;
+                object-position: left;
+            }
+
+            .images-why-we {
+                width: 394.5px;
+                height: 522px;
                 object-fit: cover;
                 object-position: left;
             }
@@ -215,15 +221,15 @@
                 display: inline-block;
                 float: left;
                 padding: 40px;
-
             }
+
             .icons {
                 width: 100px;
                 height: 100px;
                 object-fit: cover;
                 object-position: right;
                 padding: 10px;
-                margin-left: 30px;
+                margin-left: 35px;
                 text-align: center;
             }
 
@@ -234,6 +240,47 @@
                 line-height: 60px;
                 font-weight: normal;
                 color: #840810;
+            }
+
+            .footer-company-name {
+                font-family: "Nova Round";
+                font-size: 20px;
+                line-height: 25px;
+                width: 114px;
+                letter-spacing: 0.4rem;
+                -webkit-text-fill-color: black;
+                -webkit-text-stroke: 0.5px white;
+            }
+
+            .vertical-menu {
+                width: 133px;
+                text-align: left;
+                position: relative;
+                margin-left: 337px;
+                margin-top: -30px;
+            }
+
+            .vertical-menu a {
+                color: white;
+                padding: 35px;
+                text-decoration: none;
+                font-family: "Playfair Display SC";
+                font-size: 14px;
+                font-weight: normal;
+                text-align: left;
+                line-height: 40px;
+            }
+
+            .vertical-menu a:hover {
+                color: #840810;
+            }
+
+            .vertical-menu a.active {
+                color: white;
+                font-size: 16px;
+                font-family: "Playfair Display SC bold";
+                font-weight: bold;
+                line-height: 25px;
             }
 
         </style>
@@ -307,7 +354,7 @@
 
         <div class="category-icons">
             <img style="margin-left: 260px" class="icons" src="/images/cart.png" />
-            <p class="under-icon-text"><u>ЗАМОВЛЯЙ</u></p>
+            <p style="margin-left: 130px" class="under-icon-text"><u>ЗАМОВЛЯЙ</u></p>
             <p style="width: 234px; text-align: left; margin-left: 190px" class="text">Замовити ще не було так просто!
                 Щоб замовити, залиште заявку на нашому сайті або зателефонуйте нам. </p>
         </div>
@@ -319,9 +366,56 @@
         <div class="category-icons">
             <img class="icons" src="/images/buy-home.png" />
             <p class="under-icon-text"><u>ОТРИМУЙ</u></p>
-            <p style="width: 240px; text-align: right; margin-right: 100px" class="text">Отримуй доставку від кур’єра або прямо у пекарні.
+            <p style="width: 240px; text-align: right; margin-right: 100px; margin-bottom: 150px" class="text">Отримуй доставку від кур’єра або прямо у пекарні.
                 При замовленні від 1500 грн доставка кур’єром буде безкоштовною.</p>
         </div>
+
+        <p class="titles">
+            <u>Чому саме ми?</u>
+        </p>
+
+        <div class="category">
+            <img class="images-why-we" src="/images/ingredients.jpg" />
+            <p class="production-name">Якісні та свіжі  інгрідієнти </p>
+        </div>
+        <div class="category">
+            <img class="images-why-we" src="/images/professional.jpg" />
+            <p class="production-name">Професійні кондитери та 10 років кондитерської історії </p>
+        </div>
+        <div class="category">
+            <img class="images-why-we" src="/images/view_from_window.jpg" />
+            <p class="production-name" style="margin-bottom: 150px">Неповторний вид із вікна на Дніпро та річковий порт</p>
+        </div>
+
+        <hr style="width: 1295px">
+
+        <p class="footer-company-name">
+            bread n<span>'ma</span>d
+        </p>
+
+        <div class="vertical-menu" style="width:133px; height:180px">
+            <a href="#" class="active">НАВІГАЦІЯ</a>
+            <a href="#">МАГАЗИН</a>
+            <a href="#">ГОЛОВНА</a>
+            <a href="#">ПРО НАС</a>
+            <a href="#">ЛОКАЦІЯ</a>
+            <a href="#">КОНТАКТИ</a>
+        </div>
+
+        <p class="text" style="font-size: 12px; letter-spacing: 0.4rem; width:85.24px; margin-top: -170px;">
+            пекарня
+        </p>
+
+
+        <p class="text" style="font-size: 14px; width: 228px; height: 229px; text-align: left">
+            &emsp;Найважливіше в нашій роботі це дарувати радість, щастя та задоволення кожного дня.
+            <br>
+            &emsp;Використання найкращих продуктів, передових технологій та авторських рецептів,
+            не тільки виконує ці завдання, а й створює любов у вашому серці.
+        </p>
+
+
+
 
     </body>
 </html>

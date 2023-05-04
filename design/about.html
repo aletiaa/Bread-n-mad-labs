@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Nova Round' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+
+  <style>
+    body {
+      background-color: #0E0D0D;
+      color: white;
+      margin: 70px 112.5px 170px 112.5px;
+    }
+
+    p.company-name {
+      font-family: 'Nova Round';
+      font-weight: normal;
+      text-align: center;
+      letter-spacing: 0.4rem;
+      -webkit-text-stroke: 1px white;
+      -webkit-text-fill-color: black;
+      font-size: 40px;
+      line-height: 25px;
+      margin-bottom:0;
+    }
+
+    p.adress{
+      text-align: right;
+      font-family: 'Playfair Display SC';
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      font-size: 15px;
+      line-height: 20px;
+      color: white;
+    }
+
+    h4 {
+      font-family: 'Playfair Display';
+      font-weight: normal;
+      text-align: center;
+      letter-spacing: 0.4rem;
+      line-height: 27px;
+      margin-bottom: 0;
+      margin-top: -50px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: -1px;
+      overflow: hidden;
+      background-color: #1E1616;
+    }
+
+    li {
+      float: left;
+      margin: 7px;
+      padding: 0 36px 0 36px;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding:  10px 29px 10px 29px;
+      text-decoration: none;
+      height: 20px;
+      font-family: 'Playfair Display SC',serif;
+      font-weight: normal;
+      letter-spacing: 0.2rem;
+    }
+
+    li a:hover {
+      background-color: #111111;
+    }
+
+    .main-header-shopping-bag {
+      position: absolute;
+      width: 30px;
+      height: 22px;
+      align-self: center;
+      background: url('/images/shopping-bag (3).png');
+    }
+
+    span {
+      margin-top: 20px;
+      text-decoration: underline;
+      text-underline-offset: 0.5rem;
+      text-decoration-thickness: 1px;
+    }
+
+    p.name {
+      font-family: "Playfair Display SC";
+      font-size: 50px;
+      color: #840810;
+      line-height: 50px;
+      font-weight: bold;
+      text-decoration: underline;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 60px;
+    }
+    p.text-contact {
+      width: 360px;
+      line-height: 50px;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 5px;
+    }
+
+    button {
+      background-color: #840810;
+      width: 208px;
+      height: 65px;
+      border-radius: 100px;
+      font-size: 28px;
+      color: white;
+      line-height: 50px;
+      font-family: 'Playfair Display',serif;
+      text-align: center;
+    }
+
+    button.all {
+      margin-left: 520px;
+      margin-bottom: 100px;
+    }
+
+    button.all:hover{
+      background-color: black;
+    }
+
+    .footer-company-name {
+      font-family: "Nova Round";
+      font-size: 20px;
+      line-height: 25px;
+      width: 114px;
+      letter-spacing: 0.4rem;
+      -webkit-text-fill-color: black;
+      -webkit-text-stroke: 0.5px white;
+    }
+
+    .vertical-menu {
+      text-align: left;
+      position: relative;
+      margin-left: 337px;
+      margin-top: -30px;
+      width: 133px;
+    }
+
+    .vertical-menu a {
+      color: white;
+      padding: 35px;
+      text-decoration: none;
+      font-family: "Playfair Display SC";
+      font-size: 14px;
+      font-weight: normal;
+      text-align: left;
+      line-height: 40px;
+    }
+
+    .vertical-menu a:hover {
+      color: #840810;
+    }
+
+    .vertical-menu a.active {
+      color: white;
+      font-size: 16px;
+      font-family: "Playfair Display SC bold";
+      font-weight: bold;
+      line-height: 25px;
+    }
+
+    .images-social-media {
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+      object-position: right;
+    }
+
+    .category-social {
+      align-self: center;
+      position: relative;
+      display: inline-block;
+      float: left;
+      padding: 10px;
+      width: 75px;
+    }
+
+    .google-map-small {
+      padding-bottom: 50%;
+      position: relative;
+    }
+
+    .google-map-small iframe {
+      height: 100px;
+      width: 245px;
+      left: 0;
+      top: 0;
+      position: absolute;
+    }
+
+    p.text {
+      color: white;
+      font-family: 'Playfair Display';
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 30px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+
+  </style>
+
+    <title>About</title>
+</head>
+<body>
+  <p class="company-name">B<span>READ'N'MA</span>D</p>
+
+  <p class="adress"><u>+380666619244</u><br><u>вул. Героїв Дніпра, 69</u></p>
+
+  <h4>пекарня </h4>
+
+  <svg width="1295" height="54">
+    <ul>
+      <li><a href="home.html">ГОЛОВНА</a></li>
+      <li><a href="contacts.html">КОНТАКТИ</a></li>
+      <li><a href="about.html">П<span>РО НА</span>С</a></li>
+      <li><a href="#shop">МАГАЗИН</a></li>
+      <li><a href="#bag">КОШИК<img class="main-header-shopping-bag" src="/images/shopping-bag (3).png"></a></li>
+    </ul>
+  </svg>
+
+  <p class="name">Про нас</p>
+
+  <p class="text" style="line-height: 50px; text-align: left; margin-bottom: 100px;">
+    &emsp;&emsp;Пекарня BREAD’N’MAD є прототипом найкращих європейських закладів.
+    Місце, де клієнт завжди може зустріти ароматну випічку, насолодитися кавою в естетичних інтер'єрах,
+    поспілкуватися з друзями у приємній атмосфері та насолодитися неперевершеним видом із вікна.
+    Тут можна посмакувати найкращим пончиком в окрузі, перекусити смачним тартом, взяти їжу з собою і почастувати друзів і близьких.
+    <br>&emsp;&emsp;Назва BREAD’N’MAD (букв. — «хліб та божевільний»), походить від того,
+    що скустувавши нашу продукцію вас це настільки здивує, що аж зведе з розуму. Але це лише жарт).
+    <br>&emsp;&emsp;Пекарня орієнтована на постійних покупців, що живуть недалеко,
+    а також на клієнтів, які приїжджають спеціально насолодитися чудовим прийомом їжі та кавою,
+    провести приємно час за дружньою розмовою чи побаченням.
+    <br>&emsp;&emsp;Меню складається з випічки та десертів, кави та чаю.
+  </p>
+
+  <hr style="width: 1295px">
+
+  <p class="footer-company-name">
+    bread n<span>'ma</span>d
+  </p>
+
+  <div class="vertical-menu" style="width:133px; height:180px">
+    <a href="#" class="active">НАВІГАЦІЯ</a>
+    <a href="#">МАГАЗИН</a>
+    <a href="home.html">ГОЛОВНА</a>
+    <a href="about.html">ПРО НАС</a>
+    <a href="https://goo.gl/maps/sXsZZ53Q8gvv6bGj9">ЛОКАЦІЯ</a>
+    <a href="contacts.html">КОНТАКТИ</a>
+  </div>
+
+  <div class="vertical-menu" style="width:248px; height:132px; margin-left: 650px; margin-top: -180px">
+    <a href="#" class="active">КОНТАКТИ</a>
+    <a href="tel:+440706698818" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+440706698818</a>
+    <a href="tel:+380666619244" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+380666619244</a>
+    <a href="mailto:alina.seikauskaite2@gmail.com" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">alina.seikauskaite2@gmail.com</a>
+  </div>
+
+  <p class="text" style="font-size: 12px; letter-spacing: 0.4rem; width:85.24px; margin-top: -120px">
+    пекарня
+  </p>
+
+  <p class="text" style="font-size: 14px; width: 228px; height: 229px; text-align: left">
+    &emsp;Найважливіше в нашій роботі це дарувати радість, щастя та задоволення кожного дня.
+    <br>
+    &emsp;Використання найкращих продуктів, передових технологій та авторських рецептів,
+    не тільки виконує ці завдання, а й створює любов у вашому серці.
+  </p>
+
+  <div class="vertical-menu" style="width:444px; height:94px; margin-left: 650px; margin-top: -65px">
+    <a href="https://goo.gl/maps/eiVwS2XKxnWpcSuA7" class="active">ЛОКАЦІЯ</a>
+    <br>
+    <a href="https://goo.gl/maps/eiVwS2XKxnWpcSuA7" style="font-family: 'Playfair Display SC'; font-size: 16px; font-weight: normal">ВУЛИЦЯ ГЕРОЇВ ДНІПРА, 69</a>
+  </div>
+
+  <div class="vertical-menu" style="width:350px; height:94px; margin-left: 1050px; margin-top: -335px">
+    <a href="#" class="active">МИ В СОЦМЕРЕЖАХ</a>
+    <br>
+
+    <div class="category-social">
+      <img class="images-social-media" src="/images/facebook%20(2).png" />
+    </div>
+    <div class="category-social">
+      <img class="images-social-media" src="/images/twitter%20(1).png" />
+    </div>
+    <div class="category-social">
+      <img class="images-social-media" src="/images/messenger%20(1).png" />
+    </div>
+    <div class="category-social">
+      <img class="images-social-media" src="/images/instagram%20(1).png" />
+    </div>
+    <div class="category-social">
+      <img class="images-social-media" src="/images/youtube%20(1).png" />
+    </div>
+    <div class="category-social">
+      <img class="images-social-media" src="/images/pinterest%20(1).png" />
+    </div>
+
+    <div class="google-map-small">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.
+        2269273821225!2d32.074784076442434!3d49.
+        44242787141731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b70045f75af%3A0x161dafe589132c37
+        !2z0YPQuy4g0JPQtdGA0L7QtdCyINCU0L3QtdC_0YDQsCwgNjksINCn0LXRgNC60LDRgdGB0YssINCn0LXRgNC60LDRgdGB0LrQsNGPINC
+        -0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMTgwMDA!5e0!3m2!1sru!2suk!4v1683236652746!5m2!1sru!2suk"
+              width="245" height="100" style="border:0; margin-top: 165px"  allowfullscreen=""
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade;">
+      </iframe>
+    </div>
+  </div>
+</body>
+</html>

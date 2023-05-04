@@ -3,7 +3,6 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Nova Round' rel='stylesheet'>
         <style>
@@ -300,6 +299,19 @@
                 width: 75px;
             }
 
+            .google-map {
+                padding-bottom: 50%;
+                position: relative;
+            }
+
+            .google-map iframe {
+                height: 100px;
+                width: 245px;
+                left: 0;
+                top: 0;
+                position: absolute;
+            }
+
         </style>
 
         <title>bread'n'mad</title>
@@ -314,8 +326,8 @@
 
         <svg width="1295" height="54">
             <ul>
-                <li><a href="#home">Г<span>ОЛОВН</span>А</a></li>
-                <li><a href="#contacts">КОНТАКТИ</a></li>
+                <li><a href="home.html">Г<span>ОЛОВН</span>А</a></li>
+                <li><a href="contacts.html">КОНТАКТИ</a></li>
                 <li><a href="#about_us">ПРО НАС</a></li>
                 <li><a href="#shop">МАГАЗИН</a></li>
                 <li><a href="#bag">КОШИК<img class="main-header-shopping-bag" src="/images/shopping-bag (3).png"></a></li>
@@ -411,19 +423,19 @@
         </p>
 
         <div class="vertical-menu" style="width:133px; height:180px">
-            <a href="#" class="active">НАВІГАЦІЯ</a>
+            <a href="home.html" class="active">НАВІГАЦІЯ</a>
             <a href="#">МАГАЗИН</a>
-            <a href="#">ГОЛОВНА</a>
-            <a href="#">ПРО НАС</a>
-            <a href="#">ЛОКАЦІЯ</a>
-            <a href="#">КОНТАКТИ</a>
+            <a href="home.html">ГОЛОВНА</a>
+            <a href="about.html">ПРО НАС</a>
+            <a href="https://goo.gl/maps/sXsZZ53Q8gvv6bGj9">ЛОКАЦІЯ</a>
+            <a href="contacts.html">КОНТАКТИ</a>
         </div>
 
         <div class="vertical-menu" style="width:248px; height:132px; margin-left: 650px; margin-top: -180px;">
-            <a href="#" class="active">КОНТАКТИ</a>
-            <a href="#" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+440706698818</a>
-            <a href="#" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+380666619244</a>
-            <a href="#" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">alina.seikauskaite2@gmail.com</a>
+            <a href="contacts.html" class="active">КОНТАКТИ</a>
+            <a href="tel:+4407706698818" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+440706698818</a>
+            <a href="tel:+380666619244" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+380666619244</a>
+            <a href="mailto:alina.seikauskaite2@gmail.com" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">alina.seikauskaite2@gmail.com</a>
         </div>
 
         <p class="text" style="font-size: 12px; letter-spacing: 0.4rem; width:85.24px; margin-top: -120px;">
@@ -438,9 +450,9 @@
         </p>
 
         <div class="vertical-menu" style="width:444px; height:94px; margin-left: 650px; margin-top: -65px">
-            <a href="#" class="active">ЛОКАЦІЯ</a>
+            <a href="https://goo.gl/maps/eiVwS2XKxnWpcSuA7" class="active">ЛОКАЦІЯ</a>
             <br>
-            <a href="#" style="font-family: 'Playfair Display SC'; font-size: 16px; font-weight: normal">ВУЛИЦЯ ГЕРОЇВ ДНІПРА, 69</a>
+            <a href="https://goo.gl/maps/eiVwS2XKxnWpcSuA7" style="font-family: 'Playfair Display SC'; font-size: 16px; font-weight: normal">ВУЛИЦЯ ГЕРОЇВ ДНІПРА, 69</a>
         </div>
 
         <div class="vertical-menu" style="width:350px; height:94px; margin-left: 1050px; margin-top: -335px;">
@@ -466,7 +478,16 @@
                 <img class="images-social-media" src="/images/pinterest%20(1).png" />
             </div>
 
-            <img style="width:245px; height: 100px; margin-top: 35px" src="/images/location.jpg">
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.
+        2269273821225!2d32.074784076442434!3d49.
+        44242787141731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b70045f75af%3A0x161dafe589132c37
+        !2z0YPQuy4g0JPQtdGA0L7QtdCyINCU0L3QtdC_0YDQsCwgNjksINCn0LXRgNC60LDRgdGB0YssINCn0LXRgNC60LDRgdGB0LrQsNGPINC
+        -0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMTgwMDA!5e0!3m2!1sru!2suk!4v1683236652746!5m2!1sru!2suk"
+                        width="245" height="100" style="border:0; margin-top: 165px"  allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade;">
+                </iframe>
+            </div>
         </div>
 
     </body>

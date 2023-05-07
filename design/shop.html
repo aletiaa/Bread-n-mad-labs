@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,12 +102,6 @@
             margin-top: 100px;
             margin-bottom: 60px;
         }
-        p.text-contact {
-            width: 360px;
-            line-height: 50px;
-            font-size: 30px;
-            text-align: left;
-        }
 
         .google-map {
             padding-bottom: 50%;
@@ -208,19 +202,6 @@
             width: 75px;
         }
 
-        .google-map-small {
-            padding-bottom: 50%;
-            position: relative;
-        }
-
-        .google-map-small iframe {
-            height: 100px;
-            width: 245px;
-            left: 0;
-            top: 0;
-            position: absolute;
-        }
-
         p.text {
             color: white;
             font-family: 'Playfair Display';
@@ -231,9 +212,48 @@
             margin-top: 20px;
         }
 
+        #HASH {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .category {
+            align-self: center;
+            position: relative;
+            display: inline-block;
+            float:left;
+            margin: 0 31px 0 0;
+        }
+
+        .images {
+            width: 400px;
+            height: 315px;
+            object-fit: cover;
+            object-position: left;
+        }
+
+        p.production-name {
+            font-family: "Playfair Display SC";
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            width: 360px;
+        }
+
+        p.prices {
+            font-family: "Playfair Display";
+            text-align: center;
+            font-size: 28px;
+            line-height: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 100px;
+        }
+
     </style>
 
-    <title>Contacts</title>
+    <title>Shop</title>
 </head>
 
 <body>
@@ -246,39 +266,77 @@
     <svg width="1295" height="54">
         <ul>
             <li><a href="home.html">ГОЛОВНА</a></li>
-            <li><a href="contacts.html">К<span>ОНТАКТ</span>И</a></li>
+            <li><a href="contacts.html">КОНТАКТИ</a></li>
             <li><a href="about.html">ПРО НАС</a></li>
-            <li><a href="shop.html">МАГАЗИН</a></li>
+            <li><a href="shop.html">М<span>АГАЗИ</span>Н</a></li>
             <li><a href="bag.html">КОШИК<img class="main-header-shopping-bag" src="/images/shopping-bag (3).png"></a></li>
         </ul>
     </svg>
 
-    <p class="name">Наші контакти</p>
-
-    <div class="container">
-        <div>
-            <p style="font-family: 'Playfair Display SC'; font-weight: bold" class="text-contact">
-                КОНТАКТИ ПЕКАРНІ
-                <br>
-            <p style="font-family: 'Playfair Display'; font-weight: normal; text-decoration: underline" class="text-contact">
-                м. Черкаси, вул. Героїв Дніпра <br>
-                +380666619244<br>
-                alina.seikauskaite3@gmail.com
-            </p>
-            </p>
-        </div>
-
-        <div class="google-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.
-        2269273821225!2d32.074784076442434!3d49.
-        44242787141731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b70045f75af%3A0x161dafe589132c37
-        !2z0YPQuy4g0JPQtdGA0L7QtdCyINCU0L3QtdC_0YDQsCwgNjksINCn0LXRgNC60LDRgdGB0YssINCn0LXRgNC60LDRgdGB0LrQsNGPINC
-        -0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMTgwMDA!5e0!3m2!1sru!2suk!4v1683236652746!5m2!1sru!2suk"
-                    width="679" height="287" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-        </div>
+    <p class="name">Магазин</p>
+    <div id="HASH">
+        <p class="text" style="text-align: left">В<span>сі товар</span>и</p>
+        <p class="text" style="text-align: end">Сортувати</p>
     </div>
-        <br>
-        <button class="all">Подзвонити</button>
+
+
+    <div class="category">
+        <img class="images" src="/images/fraiser%20cake.jpg" />
+        <p class="production-name">Полунично-ванільний торт з макарунами</p>
+        <p class="prices">2800 грн</p>
+    </div>
+    <div class="category">
+        <img class="images" src="/images/charlotte%20cake.jpg" />
+        <p class="production-name">Торт із баварським кремом та Полуницею </p>
+        <p class="prices">2300 грн</p>
+    </div>
+    <div class="category">
+        <img class="images" src="/images/framboiser%20cake.jpg" />
+        <p class="production-name">Малиново-ванільний торт із марципаном</p>
+        <p class="prices">2250 грн</p>
+    </div><div class="category">
+        <img class="images" src="/images/custard%20tart.jpg" />
+        <p class="production-name">Тарт із заварним кремом та карамеллю</p>
+        <p class="prices">1700 грн</p>
+    </div>
+    <div class="category">
+        <img class="images" src="/images/carrot%20cake.jpg" />
+        <p class="production-name">Морквяно-горіховий торт з апельсином</p>
+        <p class="prices">2300 грн</p>
+    </div>
+    <div class="category">
+        <img class="images" src="/images/raspberry%20cake.jpg" />
+        <p class="production-name">Малиновий мусовий торт з карамеллю</p>
+        <p class="prices">1800 грн</p>
+    </div><div class="category">
+        <img class="images" src="/images/lemon_tart.jpg" />
+        <p class="production-name">Лимонно-чорничний тарт з м’ятою та горіхами</p>
+        <p class="prices">1800 грн</p>
+    </div>
+    <div class="category">
+        <img class="images" src="/images/lt2.jpg" />
+        <p class="production-name">Лимонно-лаймовий тарт з м’ятою та кокосом</p>
+        <p class="prices">1650 грн</p>
+    </div>
+    <div class="category">
+        <img class="images" src="/images/tart1.jpg" />
+        <p class="production-name">Яблуневий тарт з малиною та агрусом</p>
+        <p class="prices">1300 грн</p>
+    </div><div class="category">
+        <img class="images" src="/images/trio%20chocolate.jpg" />
+        <p class="production-name">Мусовий торт з 3 різними видами шоколаду</p>
+        <p class="prices">1300 грн</p>
+    </div>
+    <div class="category">
+        <img class="images" src="/images/fromage.jpg" />
+        <p class="production-name">Тарт-чізкейк з карамеллю та листовим тістом</p>
+        <p class="prices">1100 грн</p>
+    </div>
+    <div class="category">
+        <img class="images" src="/images/chiki%20cake.jpg" />
+        <p class="production-name">Шоколадний торт з полуничним джемом</p>
+        <p class="prices">1800 грн</p>
+    </div>
 
     <hr style="width: 1295px">
 
@@ -297,7 +355,7 @@
 
     <div class="vertical-menu" style="width:248px; height:132px; margin-left: 650px; margin-top: -180px">
         <a href="#" class="active">КОНТАКТИ</a>
-        <a href="tel:+4407706698818" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+440706698818</a>
+        <a href="tel:+440706698818" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+440706698818</a>
         <a href="tel:+380666619244" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+380666619244</a>
         <a href="mailto:alina.seikauskaite2@gmail.com" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">alina.seikauskaite2@gmail.com</a>
     </div>
@@ -348,11 +406,10 @@
         44242787141731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b70045f75af%3A0x161dafe589132c37
         !2z0YPQuy4g0JPQtdGA0L7QtdCyINCU0L3QtdC_0YDQsCwgNjksINCn0LXRgNC60LDRgdGB0YssINCn0LXRgNC60LDRgdGB0LrQsNGPINC
         -0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMTgwMDA!5e0!3m2!1sru!2suk!4v1683236652746!5m2!1sru!2suk"
-                    width="245" height="100" style="border:0; margin-top: 165px"  allowfullscreen=""
+                    width="245" height="100" style="border:0; margin-top: 25px"  allowfullscreen=""
                     loading="lazy" referrerpolicy="no-referrer-when-downgrade;">
             </iframe>
         </div>
     </div>
-
 </body>
 </html>

@@ -13,6 +13,12 @@
             margin: 70px 112.5px 170px 112.5px;
         }
 
+        @media (max-width: 700px) {
+            body {
+                margin: 10% 10% 0 10%;
+            }
+        }
+
         p.company-name {
             font-family: 'Nova Round';
             font-weight: normal;
@@ -25,6 +31,22 @@
             margin-bottom:0;
         }
 
+        @media (max-width: 700px) {
+            p.company-name {
+                font-size: 3vh;
+            }
+        }
+
+        @media (max-width: 700px) {
+            svg {
+                margin-left: 5%;
+                margin-right: 5%;
+                display: flex;
+                flex-wrap: wrap;
+                align-self: center;
+            }
+        }
+
         p.adress{
             text-align: right;
             font-family: 'Playfair Display SC';
@@ -33,6 +55,25 @@
             font-size: 15px;
             line-height: 20px;
             color: white;
+        }
+
+        @media (max-width: 700px) {
+            p.adress {
+                text-align: center;
+                font-size: 13px;
+                line-height: 15px;
+
+            }
+        }
+
+        @media (min-width :701px) and (max-width: 1300px)
+        {
+            p.adress {
+                text-align: center;
+                font-size: 16px;
+                line-height: 20px;
+
+            }
         }
 
         h4 {
@@ -45,6 +86,20 @@
             margin-top: -50px;
         }
 
+        @media (max-width: 700px) {
+            h4 {
+                margin-top: 10px;
+                letter-spacing: 0;
+            }
+        }
+
+        @media (min-width :701px) and (max-width: 1300px) {
+            h4 {
+                margin-top: 10px;
+                text-transform: uppercase;
+            }
+        }
+
         ul {
             list-style-type: none;
             margin: 0;
@@ -53,10 +108,26 @@
             background-color: #1E1616;
         }
 
+        @media (max-width: 1100px) {
+            ul{
+                flex-direction: column;
+            }
+        }
+
         li {
             float: left;
             margin: 7px;
             padding: 0 36px 0 36px;
+        }
+
+        @media (max-width: 1300px) {
+            li {
+                margin-bottom: 10px;
+                margin-left: 15%;
+                text-align: center;
+                flex-wrap: wrap;
+
+            }
         }
 
         li a {
@@ -103,6 +174,14 @@
             margin-bottom: 60px;
         }
 
+        @media (max-width: 700px) {
+            p.name {
+                font-size: 30px;
+                margin-top: 60px;
+            }
+
+        }
+
         .google-map {
             padding-bottom: 50%;
             position: relative;
@@ -136,6 +215,16 @@
             text-align: center;
         }
 
+        @media (max-width: 700px)
+        {
+            button {
+                width: 104px;
+                height: 30px;
+                font-size: 14px;
+                line-height: 25px;
+            }
+        }
+
         button.all {
             margin-left: 520px;
             margin-bottom: 100px;
@@ -155,12 +244,28 @@
             -webkit-text-stroke: 0.5px white;
         }
 
+        @media (max-width: 700px) {
+            .footer-company-name {
+                font-size: 15px;
+                line-height: 25px;
+                width: 114px;
+                letter-spacing: 0.2rem;
+            }
+        }
+
         .vertical-menu {
             text-align: left;
             position: relative;
             margin-left: 337px;
             margin-top: -30px;
             width: 133px;
+        }
+
+        @media (min-width: 1295px) {
+            .vertical-menu {
+                width:444px;
+                height:94px;
+            }
         }
 
         .vertical-menu a {
@@ -172,6 +277,14 @@
             font-weight: normal;
             text-align: left;
             line-height: 40px;
+        }
+
+        @media (max-width: 700px) {
+            .vertical-menu a {
+                padding: 10px;
+                font-size: 9px;
+                line-height: 20px;
+            }
         }
 
         .vertical-menu a:hover {
@@ -186,11 +299,25 @@
             line-height: 25px;
         }
 
+        @media (max-width: 700px) {
+            .vertical-menu a.active {
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+
         .images-social-media {
             width: 45px;
             height: 45px;
             object-fit: cover;
             object-position: right;
+        }
+
+        @media (max-width: 700px) {
+            .images-social-media {
+                width: 25px;
+                height: 25px;
+            }
         }
 
         .category-social {
@@ -202,6 +329,12 @@
             width: 75px;
         }
 
+        @media (max-width: 700px) {
+            .category-social {
+                width: 30px;
+            }
+        }
+
         p.text {
             color: white;
             font-family: 'Playfair Display';
@@ -210,6 +343,13 @@
             line-height: 30px;
             text-align: center;
             margin-top: 20px;
+        }
+
+        @media (max-width: 700px) {
+            p.text {
+                font-size: 13px;
+                line-height: 20px;
+            }
         }
 
         #HASH {
@@ -232,6 +372,12 @@
             object-position: left;
         }
 
+        @media (max-width: 700px) {
+            .images {
+                object-position: center;
+            }
+        }
+
         p.production-name {
             font-family: "Playfair Display SC";
             text-align: center;
@@ -249,6 +395,16 @@
             font-weight: bold;
             text-transform: uppercase;
             margin-bottom: 100px;
+        }
+
+        hr {
+            width: 1295px;
+        }
+
+        @media (max-width: 700px) {
+            hr {
+                width: 100%;
+            }
         }
 
     </style>
@@ -338,14 +494,14 @@
         <p class="prices">1800 грн</p>
     </div>
 
-    <hr style="width: 1295px">
+    <hr>
 
     <p class="footer-company-name">
         bread n<span>'ma</span>d
     </p>
 
     <div class="vertical-menu" style="width:133px; height:180px">
-        <a href="#" class="active">НАВІГАЦІЯ</a>
+        <a href="home.html" class="active">НАВІГАЦІЯ</a>
         <a href="shop.html">МАГАЗИН</a>
         <a href="home.html">ГОЛОВНА</a>
         <a href="about.html">ПРО НАС</a>
@@ -354,7 +510,7 @@
     </div>
 
     <div class="vertical-menu" style="width:248px; height:132px; margin-left: 650px; margin-top: -180px">
-        <a href="#" class="active">КОНТАКТИ</a>
+        <a href="contacts.html" class="active">КОНТАКТИ</a>
         <a href="tel:+440706698818" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+440706698818</a>
         <a href="tel:+380666619244" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+380666619244</a>
         <a href="mailto:alina.seikauskaite2@gmail.com" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">alina.seikauskaite2@gmail.com</a>
@@ -371,7 +527,7 @@
         не тільки виконує ці завдання, а й створює любов у вашому серці.
     </p>
 
-    <div class="vertical-menu" style="width:444px; height:94px; margin-left: 650px; margin-top: -65px">
+    <div class="vertical-menu">
         <a href="https://goo.gl/maps/eiVwS2XKxnWpcSuA7" class="active">ЛОКАЦІЯ</a>
         <br>
         <a href="https://goo.gl/maps/eiVwS2XKxnWpcSuA7" style="font-family: 'Playfair Display SC'; font-size: 16px; font-weight: normal">ВУЛИЦЯ ГЕРОЇВ ДНІПРА, 69</a>

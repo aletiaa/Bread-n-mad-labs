@@ -25,8 +25,7 @@
     position: relative;
     display: inline-block;
     float:left;
-    flex: 33.3%;
-    padding: 15px;
+    flex: 33.33%;
 }
 
 .images {

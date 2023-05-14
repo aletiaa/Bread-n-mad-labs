@@ -20,6 +20,7 @@ button {
     line-height: 50px;
     font-family: 'Playfair Display',serif;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 700px)
@@ -31,8 +32,6 @@ button {
         line-height: 25px;
     }
 }
-
-
 
 @media (max-width: 700px) {
     svg {
@@ -69,7 +68,6 @@ p.adress{
         text-align: center;
         font-size: 16px;
         line-height: 20px;
-
     }
 }
 
@@ -163,8 +161,8 @@ span {
 .main-header-image-container .btn {
     position: absolute;
     top: 70%;
-    left: 720px;
-    transform: translate(-85%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
 

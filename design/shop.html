@@ -15,7 +15,7 @@
 
         @media (max-width: 700px) {
             body {
-                margin: 10% 10% 0 10%;
+                margin: 20% 10% 20% 10%;
             }
         }
 
@@ -197,6 +197,12 @@
             position: absolute;
         }
 
+        @media (max-width: 700px) {
+            .google-map{
+                display: none;
+            }
+        }
+
         .container {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -244,14 +250,14 @@
             -webkit-text-stroke: 0.5px white;
         }
 
-        @media (max-width: 700px) {
+        /*@media (max-width: 700px) {
             .footer-company-name {
                 font-size: 15px;
                 line-height: 25px;
                 width: 114px;
                 letter-spacing: 0.2rem;
             }
-        }
+        }*/
 
         .vertical-menu {
             text-align: left;
@@ -261,10 +267,9 @@
             width: 133px;
         }
 
-        @media (min-width: 1295px) {
+        @media (max-width: 700px) {
             .vertical-menu {
-                width:444px;
-                height:94px;
+               display:none;
             }
         }
 
@@ -279,13 +284,11 @@
             line-height: 40px;
         }
 
-        @media (max-width: 700px) {
+        /*@media (max-width: 700px) {
             .vertical-menu a {
-                padding: 10px;
-                font-size: 9px;
-                line-height: 20px;
+                display: none;
             }
-        }
+        }*/
 
         .vertical-menu a:hover {
             color: #840810;
@@ -299,12 +302,11 @@
             line-height: 25px;
         }
 
-        @media (max-width: 700px) {
+        /*@media (max-width: 700px) {
             .vertical-menu a.active {
-                font-size: 12px;
-                line-height: 20px;
+                display:none;
             }
-        }
+        }*/
 
         .images-social-media {
             width: 45px;
@@ -313,12 +315,11 @@
             object-position: right;
         }
 
-        @media (max-width: 700px) {
+        /*@media (max-width: 700px) {
             .images-social-media {
-                width: 25px;
-                height: 25px;
+                display:none;
             }
-        }
+        }*/
 
         .category-social {
             align-self: center;
@@ -329,11 +330,11 @@
             width: 75px;
         }
 
-        @media (max-width: 700px) {
+        /*@media (max-width: 700px) {
             .category-social {
-                width: 30px;
+                display:none;
             }
-        }
+        }*/
 
         p.text {
             color: white;
@@ -345,12 +346,11 @@
             margin-top: 20px;
         }
 
-        @media (max-width: 700px) {
+        /*@media (max-width: 700px) {
             p.text {
-                font-size: 13px;
-                line-height: 20px;
+                display:none;
             }
-        }
+        }*/
 
         #HASH {
             display: flex;
@@ -407,6 +407,11 @@
             }
         }
 
+        #HASH-FOOTER {
+            display: flex;
+            justify-content: space-around;
+        }
+
     </style>
 
     <title>Shop</title>
@@ -421,7 +426,7 @@
 
     <svg width="1295" height="54">
         <ul>
-            <li><a href="home.html">ГОЛОВНА</a></li>
+            <li><a href="index.html">ГОЛОВНА</a></li>
             <li><a href="contacts.html">КОНТАКТИ</a></li>
             <li><a href="about.html">ПРО НАС</a></li>
             <li><a href="shop.html">М<span>АГАЗИ</span>Н</a></li>
@@ -500,23 +505,7 @@
         bread n<span>'ma</span>d
     </p>
 
-    <div class="vertical-menu" style="width:133px; height:180px">
-        <a href="home.html" class="active">НАВІГАЦІЯ</a>
-        <a href="shop.html">МАГАЗИН</a>
-        <a href="home.html">ГОЛОВНА</a>
-        <a href="about.html">ПРО НАС</a>
-        <a href="https://goo.gl/maps/sXsZZ53Q8gvv6bGj9">ЛОКАЦІЯ</a>
-        <a href="contacts.html">КОНТАКТИ</a>
-    </div>
-
-    <div class="vertical-menu" style="width:248px; height:132px; margin-left: 650px; margin-top: -180px">
-        <a href="contacts.html" class="active">КОНТАКТИ</a>
-        <a href="tel:+440706698818" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+440706698818</a>
-        <a href="tel:+380666619244" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+380666619244</a>
-        <a href="mailto:alina.seikauskaite2@gmail.com" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">alina.seikauskaite2@gmail.com</a>
-    </div>
-
-    <p class="text" style="font-size: 12px; letter-spacing: 0.4rem; width:85.24px; margin-top: -120px">
+    <p class="text" style="font-size: 12px; letter-spacing: 0.4rem; width:85.24px; margin-top: -120px;">
         пекарня
     </p>
 
@@ -527,45 +516,65 @@
         не тільки виконує ці завдання, а й створює любов у вашому серці.
     </p>
 
+    <div id="HASH-FOOTER">
+
+        <div class="vertical-menu" style="width:133px; height:180px">
+            <a href="index.html" class="active">НАВІГАЦІЯ</a>
+            <a href="shop.html">МАГАЗИН</a>
+            <a href="index.html">ГОЛОВНА</a>
+            <a href="about.html">ПРО НАС</a>
+            <a href="https://goo.gl/maps/sXsZZ53Q8gvv6bGj9">ЛОКАЦІЯ</a>
+            <a href="contacts.html">КОНТАКТИ</a>
+        </div>
+
+        <div class="vertical-menu" style="width:248px; height:132px; margin-left: 650px">
+            <a href="contacts.html" class="active">КОНТАКТИ</a>
+            <a href="tel:+440706698818" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+440706698818</a>
+            <a href="tel:+380666619244" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">+380666619244</a>
+            <a href="mailto:alina.seikauskaite2@gmail.com" style="font-weight: bold; font-family: 'Playfair Display SC'; font-size: 16px">alina.seikauskaite2@gmail.com</a>
+        </div>
+
+        <div class="vertical-menu" style="width:350px; height:94px">
+            <a href="#" class="active">МИ В СОЦМЕРЕЖАХ</a>
+            <br>
+
+            <div class="category-social">
+                <img class="images-social-media" src="/images/facebook%20(2).png" />
+            </div>
+            <div class="category-social">
+                <img class="images-social-media" src="/images/twitter%20(1).png" />
+            </div>
+            <div class="category-social">
+                <img class="images-social-media" src="/images/messenger%20(1).png" />
+            </div>
+            <div class="category-social">
+                <img class="images-social-media" src="/images/instagram%20(1).png" />
+            </div>
+            <div class="category-social">
+                <img class="images-social-media" src="/images/youtube%20(1).png" />
+            </div>
+            <div class="category-social">
+                <img class="images-social-media" src="/images/pinterest%20(1).png" />
+            </div>
+
+            <div class="google-map-small">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.
+        2269273821225!2d32.074784076442434!3d49.
+        44242787141731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b70045f75af%3A0x161dafe589132c37
+        !2z0YPQuy4g0JPQtdGA0L7QtdCyINCU0L3QtdC_0YDQsCwgNjksINCn0LXRgNC60LDRgdGB0YssINCn0LXRgNC60LDRgdGB0LrQsNGPINC
+        -0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMTgwMDA!5e0!3m2!1sru!2suk!4v1683236652746!5m2!1sru!2suk"
+                        width="245" height="100" style="border:0; margin-top: 25px"  allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade;">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
     <div class="vertical-menu">
         <a href="https://goo.gl/maps/eiVwS2XKxnWpcSuA7" class="active">ЛОКАЦІЯ</a>
         <br>
         <a href="https://goo.gl/maps/eiVwS2XKxnWpcSuA7" style="font-family: 'Playfair Display SC'; font-size: 16px; font-weight: normal">ВУЛИЦЯ ГЕРОЇВ ДНІПРА, 69</a>
     </div>
 
-    <div class="vertical-menu" style="width:350px; height:94px; margin-left: 1050px; margin-top: -335px">
-        <a href="#" class="active">МИ В СОЦМЕРЕЖАХ</a>
-        <br>
-
-        <div class="category-social">
-            <img class="images-social-media" src="/images/facebook%20(2).png" />
-        </div>
-        <div class="category-social">
-            <img class="images-social-media" src="/images/twitter%20(1).png" />
-        </div>
-        <div class="category-social">
-            <img class="images-social-media" src="/images/messenger%20(1).png" />
-        </div>
-        <div class="category-social">
-            <img class="images-social-media" src="/images/instagram%20(1).png" />
-        </div>
-        <div class="category-social">
-            <img class="images-social-media" src="/images/youtube%20(1).png" />
-        </div>
-        <div class="category-social">
-            <img class="images-social-media" src="/images/pinterest%20(1).png" />
-        </div>
-
-        <div class="google-map-small">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.
-        2269273821225!2d32.074784076442434!3d49.
-        44242787141731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b70045f75af%3A0x161dafe589132c37
-        !2z0YPQuy4g0JPQtdGA0L7QtdCyINCU0L3QtdC_0YDQsCwgNjksINCn0LXRgNC60LDRgdGB0YssINCn0LXRgNC60LDRgdGB0LrQsNGPINC
-        -0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMTgwMDA!5e0!3m2!1sru!2suk!4v1683236652746!5m2!1sru!2suk"
-                    width="245" height="100" style="border:0; margin-top: 25px"  allowfullscreen=""
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade;">
-            </iframe>
-        </div>
-    </div>
 </body>
 </html>

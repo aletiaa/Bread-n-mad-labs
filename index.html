@@ -6,406 +6,9 @@
         <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Nova Round' rel='stylesheet'>
 
-        <style>
-            body {
-                background-color: #0E0D0D;
-                color: white;
-                margin: 70px 112.5px 170px 112.5px;
-            }
-
-            @media (max-width: 700px) {
-                body {
-                    margin: 10% 10% 0 10%;
-                }
-            }
-
-            button {
-                background-color: #840810;
-                width: 208px;
-                height: 65px;
-                border-radius: 100px;
-                font-size: 28px;
-                color: white;
-                line-height: 50px;
-                font-family: 'Playfair Display',serif;
-                text-align: center;
-            }
-
-            @media (max-width: 700px)
-            {
-                button {
-                    width: 104px;
-                    height: 30px;
-                    font-size: 14px;
-                    line-height: 25px;
-                }
-            }
-
-            p.company-name {
-                font-family: 'Nova Round';
-                font-weight: normal;
-                text-align: center;
-                letter-spacing: 0.4rem;
-                -webkit-text-stroke: 1px white;
-                -webkit-text-fill-color: black;
-                font-size: 40px;
-                line-height: 25px;
-                margin-bottom:0;
-            }
-
-            @media (max-width: 700px) {
-                p.company-name {
-                    font-size: 3vh;
-                }
-            }
-
-            @media (max-width: 700px) {
-                svg {
-                    margin-left: 5%;
-                    margin-right: 5%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-self: center;
-                }
-            }
-
-            p.adress{
-                text-align: right;
-                font-family: 'Playfair Display SC';
-                letter-spacing: 0.2rem;
-                text-transform: uppercase;
-                font-size: 15px;
-                line-height: 20px;
-                color: white;
-            }
-
-            @media (max-width: 700px) {
-                p.adress {
-                    text-align: center;
-                    font-size: 13px;
-                    line-height: 15px;
-
-                }
-            }
-
-            @media (min-width :701px) and (max-width: 1300px)
-            {
-                p.adress {
-                    text-align: center;
-                    font-size: 16px;
-                    line-height: 20px;
-
-                }
-            }
-
-            h4 {
-                font-family: 'Playfair Display';
-                font-weight: normal;
-                text-align: center;
-                letter-spacing: 0.4rem;
-                line-height: 27px;
-                margin-bottom: 0;
-                margin-top: -50px;
-            }
-
-            @media (max-width: 700px) {
-                h4 {
-                    margin-top: 10px;
-                    letter-spacing: 0;
-                }
-            }
-
-            @media (min-width :701px) and (max-width: 1300px) {
-                h4 {
-                    margin-top: 10px;
-                    text-transform: uppercase;
-                }
-            }
-
-            .main-header-image-container {
-                width: 1295px;
-                height: 626px;
-                background-image: url('/images/128038-desert-ingredient-kuhnya-vypechka-hlebobulochnye_izdeliya-1920x1080.jpg');
-                background-size: contain;
-                position: relative;
-            }
-
-            .main-header-image {
-                width: 100%;
-                height: 626px; /* Задаем желаемую высоту изображения */
-                object-fit: cover; /* Обрезаем изображение для подгонки его под размеры */
-                object-position: center top; /* Выравниваем изображение по ширине и обрезаем его снизу */
-            }
-
-            @media (max-width: 900px)
-            {
-                .main-header-image-container{
-                    display:none;
-                }
-            }
-
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: -1px;
-                overflow: hidden;
-                background-color: #1E1616;
-            }
-
-            @media (max-width: 1100px) {
-                ul{
-                    flex-direction: column;
-                }
-            }
-
-            li {
-                float: left;
-                margin: 7px;
-                padding: 0 36px 0 36px;
-            }
-
-            @media (max-width: 1300px) {
-                li {
-                    margin-bottom: 10px;
-                    margin-left: 15%;
-                    text-align: center;
-                    flex-wrap: wrap;
-
-                }
-            }
-
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding:  10px 29px 10px 29px;
-                text-decoration: none;
-                height: 20px;
-                font-family: 'Playfair Display SC',serif;
-                font-weight: normal;
-                letter-spacing: 0.2rem;
-            }
-
-            li a:hover {
-                background-color: #111111;
-            }
-
-
-            .main-header-shopping-bag {
-                position: absolute;
-                width: 30px;
-                height: 22px;
-                align-self: center;
-                background: url('/images/shopping-bag (3).png');
-            }
-
-            span {
-                margin-top: 20px;
-                text-decoration: underline;
-                text-underline-offset: 0.5rem;
-                text-decoration-thickness: 1px;
-            }
-
-            /* Style the button and place it in the middle of the container/image */
-            .main-header-image-container .btn {
-                position: absolute;
-                top: 70%;
-                left: 720px;
-                transform: translate(-85%, -50%);
-                -ms-transform: translate(-50%, -50%);
-            }
-
-            /* Centered text */
-            .centered {
-                position: absolute;
-                top: 55%;
-                left: 55%;
-                transform: translate(-60%, -60%);
-                font-family: 'Playfair Display SC';
-                font-size: 52px;
-                font-weight: bold;
-                line-height: 40px;
-                text-align: center;
-                color: darkred;
-            }
-
-            .main-header-image-container .btn:hover {
-                background-color: black;
-            }
-
-            p.titles {
-                color: darkred;
-                font-family: 'Playfair Display SC bold';
-                font-weight: bolder;
-                font-size: 50px;
-                line-height: 60px;
-                text-align: center;
-                margin-top: 200px;
-                margin-left: 350px;
-                margin-right: 350px;
-                letter-spacing: 0.05rem;
-            }
-            p.text {
-                color: white;
-                font-family: 'Playfair Display';
-                font-weight: normal;
-                font-size: 26px;
-                line-height: 30px;
-                text-align: center;
-                margin-top: 20px;
-            }
-
-            .category {
-                align-self: center;
-                position: relative;
-                display: inline-block;
-                float:left;
-                margin: 30px 36.5px 0 0;
-            }
-
-            .images {
-                width: 370px;
-                height: 440px;
-                object-fit: cover;
-                object-position: left;
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .images-why-we {
-                width: 370px;
-                height: 522px;
-                object-fit: cover;
-                object-position: left;
-                display: flex;
-                justify-content: space-between;
-            }
-
-            p.production-name {
-                font-family: "Playfair Display SC";
-                text-align: center;
-                font-size: 20px;
-                font-weight: bolder;
-                letter-spacing: 0.2rem;
-                text-transform: uppercase;
-                width: 370px;
-            }
-
-            p.prices {
-                font-family: "Playfair Display";
-                text-align: center;
-                font-size: 28px;
-                line-height: 50px;
-                font-weight: bold;
-                text-transform: uppercase;
-            }
-
-            button.all {
-                margin-left: 520px;
-            }
-
-            button.all:hover{
-                background-color: black;
-            }
-
-            .category-icons {
-                align-self: center;
-                position: relative;
-                display: inline-block;
-                float: left;
-                padding: 40px;
-            }
-
-            .icons {
-                width: 100px;
-                height: 100px;
-                object-fit: cover;
-                object-position: right;
-                padding: 10px;
-                margin-left: 35px;
-                text-align: center;
-            }
-
-            p.under-icon-text {
-                font-family: "Playfair Display";
-                text-align: center;
-                font-size: 30px;
-                line-height: 60px;
-                font-weight: normal;
-                color: #840810;
-            }
-
-            .footer-company-name {
-                font-family: "Nova Round";
-                font-size: 20px;
-                line-height: 25px;
-                width: 114px;
-                letter-spacing: 0.4rem;
-                -webkit-text-fill-color: black;
-                -webkit-text-stroke: 0.5px white;
-            }
-
-            .vertical-menu {
-                text-align: left;
-                position: relative;
-                margin-left: 337px;
-                margin-top: -30px;
-                width: 133px;
-            }
-
-            .vertical-menu a {
-                color: white;
-                padding: 35px;
-                text-decoration: none;
-                font-family: "Playfair Display SC";
-                font-size: 14px;
-                font-weight: normal;
-                text-align: left;
-                line-height: 40px;
-            }
-
-            .vertical-menu a:hover {
-                color: #840810;
-            }
-
-            .vertical-menu a.active {
-                color: white;
-                font-size: 16px;
-                font-family: "Playfair Display SC bold";
-                font-weight: bold;
-                line-height: 25px;
-            }
-
-            .images-social-media {
-                width: 45px;
-                height: 45px;
-                object-fit: cover;
-                object-position: right;
-            }
-
-            .category-social {
-                align-self: center;
-                position: relative;
-                display: inline-block;
-                float: left;
-                padding: 10px;
-                width: 75px;
-            }
-
-            .google-map {
-                padding-bottom: 50%;
-                position: relative;
-            }
-
-            .google-map iframe {
-                height: 100px;
-                width: 245px;
-                left: 0;
-                top: 0;
-                position: absolute;
-            }
-
-        </style>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/map.css">
+        <link rel="stylesheet" href="styles/names.css">
 
         <title>bread'n'mad</title>
     </head>
@@ -417,7 +20,7 @@
 
         <h4>пекарня </h4>
 
-        <svg width="1295" height="54">
+        <svg width="100%" height="54">
             <ul>
                 <li><a href="index.html">Г<span>ОЛОВН</span>А</a></li>
                 <li><a href="contacts.html">КОНТАКТИ</a></li>
@@ -439,7 +42,7 @@
             </button>
         </div>
 
-        <p class="titles">
+        <p class="title" style="margin-left: 350px;margin-right: 350px">
             <u>Смаколики, які можуть здивувати своєю начинкою</u>
         </p>
 
@@ -451,17 +54,17 @@
         </p>
 
         <div class="category">
-            <img class="images" src="./images/tart1.jpg" />
+            <img class="images" style="height: 450px" src="./images/tart1.jpg" />
             <p class="production-name">яблуневий тарт з малиною та агрусом</p>
             <p class="prices">1300 грн</p>
         </div>
         <div class="category">
-            <img class="images" src="./images/donuts.jpg" />
+            <img class="images" style="height: 450px" src="./images/donuts.jpg" />
             <p class="production-name">пончики зі смаком мадагаскарської ванілі </p>
             <p class="prices">45 грн</p>
         </div>
         <div class="category">
-            <img class="images" src="./images/lime_tart.jpg" />
+            <img class="images" style="height: 450px" src="./images/lime_tart.jpg" />
             <p class="production-name">лимонно-лаймовий тарт з м’ятою та кокосом</p>
             <p class="prices">1650 грн</p>
         </div>
@@ -470,7 +73,7 @@
             Замовити
         </button>
 
-        <p class="titles">
+        <p class="title" style="margin-left: 350px; margin-right: 350px;">
             <u>Доставка і отримання</u>
         </p>
 
@@ -571,7 +174,7 @@
                 <img class="images-social-media" src="./images/pinterest%20(1).png" />
             </div>
 
-            <div class="google-map">
+            <div class="google-map-small">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.
         2269273821225!2d32.074784076442434!3d49.
         44242787141731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b70045f75af%3A0x161dafe589132c37
